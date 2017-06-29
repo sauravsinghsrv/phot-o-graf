@@ -1,0 +1,76 @@
+# Site settings
+title: PHOT-O-GRAF
+email: "sauravsingh.srv@gmail.com"
+description: "Photography and Me"
+url: ""
+baseurl: "/phot-o-graf"
+
+account:
+  fivepx:
+    name: 
+    url: https://500px.com/
+  instagram:
+    name: 
+    url: https://instagram.com/saurav_srv
+  youtube:
+    name: Guitarist Me
+    url: https://youtube.com/sauravsinghsrv
+  twitter:
+    name: Twitterati Me
+    url: https://twitter.com/saurav_791
+  facebook:
+    name: Facebook Me
+    url: https://www.facebook.com/sauravsingh.king
+  google:
+    name: Google Me
+    url: https://plus.google.com/+SauravSinghsrv
+  mail:
+    name: Mail Me
+    url: ""
+  aboutme:
+    name: About Me
+    url: https://sauravsinghsrv.github.io/
+  linkedin:
+    name: Professional Me
+    url: https://www.linkedin.com/in/sauravsingh-srv/
+  markblog:
+    name: Marketing Me
+    url: https://sauravsinghsrv.github.io/markblog/
+  blogger:
+    name: Blogger Me
+    url: http://sauravsinghsrv.blogspot.in/
+  github:
+    name:
+    url: https://github.com/sauravsinghsrv
+  
+
+# Owner/author information
+owner:
+  name:   photograf
+  avatar: avatar.png
+  favicon: favicon.ico
+  info: photography website template
+
+
+# All translation keys
+translations:
+ # 404.html
+  permalink: "/404.html"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# SiteMap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/writing/"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"

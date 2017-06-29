@@ -1,0 +1,42 @@
+
+#grid-changer { display: inline-block; float: right; margin-top: -2.6em; z-index: 12; }
+#grid-changer ul { display: inline-block; list-style: none; padding: 0; margin: 0 0 .3em 0; font-size: .8em; letter-spacing: 0.05em; }
+#grid-changer ul li { display: inline-block; vertical-align: top; margin: -.3em 0 0 .2em;  } 
+#grid-changer ul li a { display: block; width: 30px; height: 30px; line-height: 30px; text-align: center; color: #ccc; position: relative; border: 2px solid #999; 
+-webkit-transition: all .2s ease; -moz-transition: all .2s ease; -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; }
+#grid-changer ul li a.active, #grid-changer ul li a.active:hover { border-color: #222; color: #222; }
+#grid-changer ul li a:hover { border-color: #EA8E00; color: #EA8E00; }
+#grid-changer svg { fill: #222; }
+
+
+.fullscreen-gallery.gallery { height: 100vh !important; margin: 0; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
+.fullscreen-gallery .gallery-caption { position: absolute; bottom: 0; left: 0; z-index: 99; pointer-events: auto; }
+.fullscreen-gallery .gallery-caption .entry-summary { width: 100%; bottom: 0; padding: 2.5em 4.5%; opacity: 1; }
+.fullscreen-gallery .gallery-item { height: 100%; width: 100%; }
+.fullscreen-gallery .gallery-icon { height: 100%; width: 100%; }
+.fullscreen-gallery .gallery-video  { height: 100%; width: 100%; background-size: cover; }
+.fullscreen-gallery .gallery-video video { height: 100%; width: 100%; display: inline-block; vertical-align: baseline; }
+.fullscreen-gallery .gallery-icon img { min-width: 100%; min-height: 100%; }
+.fullscreen-gallery .gallery-caption h3 { font-size: 1.15em; margin-bottom: .3em; text-transform: none; }
+
+.fullscreen-gallery.kenburns-gallery .gallery-icon { display: none; }
+.fullscreen-gallery.kenburns-gallery canvas { z-index: -1; position: absolute; left: 0; top: 0; }
+
+
+     /*galleries adapted*/
+	.masonry-gallery .gallery-item { width: 30% !important; }
+		
+@media screen and (max-height: 480px) {
+	/*header smaller space*/
+	#header { padding-top: 2em; }
+
+	/*galleries adapted*/
+	.fullscreen-gallery .gallery-caption .entry-summary { padding-bottom: 2em; }
+	.masonry-gallery .gallery-item {width: 98% !important;}
+}
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+	/*galleries adapted*/
+	.fullscreen-gallery .gallery-caption .entry-summary { padding-bottom: 5em; }
+	.masonry-gallery .gallery-item { width: 98% !important; }
+	  
